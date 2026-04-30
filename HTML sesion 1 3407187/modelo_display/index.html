@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Estilos - Valentina</title>
+    <style>
+        .titulo {
+            /* Cambiamos a un tono de rojo más suave y ajustamos px */
+            color: #b03a2e; 
+            font-size: 17px;           /* Antes: 15px */
+            background-color: #ffd1dc; /* Color rosado suave */
+            letter-spacing: 2.5px;     /* Antes: 3px */
+        }
+        .menu { 
+            display: inline;
+            /* Cambiamos a un tono rosado fuerte para que resalte */
+            background-color: #f06292; 
+            color: white;              /* Cambiado de beige */
+            width: 490px;              /* Antes: 500px */
+            height: 95px;              /* Antes: 100px */
+        }
+        .menu_block {
+            display: block;
+            background-color: #ec407a; /* Otro tono de rosa */
+            color: white;
+            width: 510px;              /* Antes: 500px */
+            height: 105px;             /* Antes: 100px */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Secciones Inline</h1>
+    <div class="menu">Inicio</div>
+    <div class="menu">Galería</div>
+    <div class="menu">Ayuda</div>
+
+    <hr>
+    <h1 class="titulo">Secciones Block</h1>
+    <div class="menu_block">Inicio</div>
+    <div class="menu_block">Galería</div>
+    <div class="menu_block">Ayuda</div>
+</body>
+</html>

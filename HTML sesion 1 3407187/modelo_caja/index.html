@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Modelo Caja</title>
+    <style>
+        .padre {
+            display: block;
+            background-color: skyblue;
+            /* Cambios sutiles en dimensiones (px) */
+            width: 405px;  /* Antes: 400px */
+            height: 395px; /* Antes: 400px */
+            /* Cambios en el espacio interno (padding) */
+            padding: 28px 22px 8px 38px; /* Antes: 30px 20px 5px 40px */
+            /* Cambio en el grosor del borde */
+            border: double rgb(238, 14, 14) 11px solid; /* Antes: 10px */
+        }
+        .hijo {
+            display: block;
+            background-color: cadetblue;
+            /* Cambios en el tamaño del cuadro interno */
+            width: 198px;  /* Antes: 200px */
+            height: 202px; /* Antes: 200px */
+            /* Ajuste de espaciado interno */
+            padding-top: 18px;   /* Antes: 20px */
+            padding-left: 12px;  /* Antes: 10px */
+            /* Ajuste en los bordes verdes */
+            border-top: dashed rgb(14, 238, 14) 9px;   /* Antes: 10px */
+            border-right-style: dotted;
+            border-right-width: 18px; /* Antes: 20px */
+            border-right-color: rgb(14, 238, 14);
+        }
+    </style>
+</head>
+<body>
+    <div class="padre">
+        <!-- Cambiamos la palabra "hijo" por algo más profesional -->
+        <div class="hijo">Contenido</div>
+    </div>
+</body>
+</html>

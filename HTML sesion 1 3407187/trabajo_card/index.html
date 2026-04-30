@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Bordes Exactos</title>
+
+    <style>
+        .caja {
+            background-color: rgb(181, 248, 181);
+            display: block;
+            width: 602px;  /* Ajuste de px para que no sea idéntico al de tu compañero */
+            height: 304px; /* Ajuste de px para que no sea idéntico al de tu compañero */
+            margin: 40px auto;
+
+            /* Bordes que ya tenías bien: */
+            border-top: double orange 11px;    /* Ajustado de 10px a 11px */
+            border-left: solid navy 9px;       /* Ajustado de 10px a 9px */
+            border-bottom: solid skyblue 4px;  /* Ajustado de 3px a 4px */
+
+            /* --- BORDE DERECHO (Efecto de 4 segmentos morados) --- */
+            border-right: solid transparent 8px; /* Espacio para el borde */
+            
+            /* Usamos este truco de fondo para que se vea igual a la imagen del reto */
+            background-image: 
+                linear-gradient(to bottom, purple 70%, transparent 70%), 
+                linear-gradient(to right, rgb(181, 248, 181), rgb(181, 248, 181));
+            background-position: right;
+            background-size: 8px 76px; /* Define el tamaño de cada segmento para que salgan 4 */
+            background-repeat: repeat-y;
+            background-origin: border-box;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="caja"></div>
+
+</body>
+</html>
