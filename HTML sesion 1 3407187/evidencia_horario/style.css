@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+
+.encabezado{
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border-bottom: 2px solid black;
+    font-size: 16px;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-right: black solid 2px;
+    width: 5%;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.jornada-receso{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(14, 40, 65);
+    width: 100%;
+    height: 20px;
+    color: white;
+    font-size: 16px;
+    /* agregue esto para que pase sobre las lineas */
+    position: relative;
+    z-index: 10;
+}
+
+/* tapa la linea negra en la columna izquierda */
+.items .jornada-receso {
+    box-shadow: 2px 0 0 rgb(14, 40, 65);
+}
+
+/* tapa la linea negra en las columnas de los dias */
+.dia .jornada-receso {
+    box-shadow: -2px 0 0 rgb(14, 40, 65);
+}
+
+/* deja en blanco la parte de arriba a la izquierda */
+.items .jornada-receso:nth-child(1),
+.items .jornada-receso:nth-child(2),
+.horas .jornada-receso:nth-child(1),
+.horas .jornada-receso:nth-child(2) {
+    background-color: white;
+    box-shadow: none;
+    z-index: 1;
+}
+
+.tematica{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(142, 217, 115);
+}
+
+.instructor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(218, 242, 208);
+}
+
+.ficha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+}
+
+.ambiente{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(224, 250, 195);
+}
+
+.t-tarde{
+    background-color: rgb(68, 179, 225);
+}
+
+.i-tarde{
+    background-color: rgb(192, 230, 245);
+}
+
+.a-tarde{
+    background-color: rgb(220, 244, 245);
+}
+
+.horas{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 5%;
+    height: auto;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.hora{
+    display: flex;
+    align-items: center;
+    height: 260px;
+    text-align: center;
+}
+
+.dias{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+.dia{
+    display: flex;
+    flex-direction: column;
+    border-left: black solid 2px;
+    width: 20%;
+    box-sizing: border-box;
+}
+
+.encabezado-dia{
+    display: block;
+    border-bottom: black solid 2px;
+    height: 20px;
+    text-align: center;
+    font-size: 16px;
+    box-sizing: border-box;
+}
